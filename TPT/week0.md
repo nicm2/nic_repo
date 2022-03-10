@@ -1,3 +1,5 @@
+# Github Actions
+
 ## Tri 3 TPT 0.1 related to Beneficial and Harmful Effects of Computing Big Idea 5.1
 
 ### 1. Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
@@ -25,3 +27,25 @@ Someone who is empowered in the digital world can help someone that is not empow
 ### 3. Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?
 
 Red tape is definatley something that blocks digital empowerment. Those who are less fortunate and don't have internet access or a usable device at home would be unable to empower themselves through technology. They have to rely on public devices for example those provided at Del Norte which often have restrictions on empowerment. 
+
+
+# College Board Notes
+
+## 5.1
+
+- People create computing innovations
+- The way people complete tasks often changes to incorporate new computing innovations
+- Not every effect of a computing innovation is anticipated in advance
+- A single effect can be viewed as both beneficial and harmful by different people or even by the same person
+- Advances in computing have generated and increased creativity in other fields, such as medicine, engineering, communications, and the arts
+- Responsible programmers try to consider the unintended ways their computing innovations can be used and the potential beneficial and harmful effects of these new uses
+- It is not possible for a programmer to consider all the ways a computing innovation can be used
+- Rapid sharing of a program or running a program with numerous users can result in significant impacts beyond the intended purpose or control of the programmer
+
+## 5.2
+
+- Internet access varies between socioeconomic, geographic, and demographic characteristics, as well as between countries
+- The “digital divide” refers to differing access to computing devices and the Internet, based on socioeconomic, geographic, or demographic characteristics
+- The digital divide can affect both groups and individuals
+- The digital divide raises the issues of equality, access, and influence, both globally, and locally
+- The digital divide is affected by the actions of individuals, organizations, and governments
