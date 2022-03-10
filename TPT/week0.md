@@ -2,6 +2,10 @@
 
 ### 1. Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
 
+|  3 Benefits  | 3 Harmful Effects  |
+| --- | --- |
+| 1. Technology has its benefits in terms of communication over long distances. Social media, texting, and calling have all made communication with family members and friends who live far away more accessible and efficient. | 1. The negative effect technology has corresponding to its benefits in communication is that it limits face to face interactions and time spent living in the real world. Obsession over phones and social media can blind us from interacting and having a good time with family and friends without using a device. |
+| | |
 
 ### 2. Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?
 
