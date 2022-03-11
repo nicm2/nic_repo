@@ -1,7 +1,5 @@
 from week0.christmastree import printTree
 from week0.ship import printShip
-from tri2.keypad import print_matr
-from tri2.swap import swap
 def f1():
     print('f1')
 def f2():
@@ -35,17 +33,6 @@ mainMenu = {
     2: {"display":"Ship",
     "exec":printShip,
     "type":"func"},
-    3: {"display":"Keypad ",
-    "exec":print_matr,
-    "type":"func"},
-    4: {"display":"Swap ",
-    "exec":swap,
-    "type":"func"},
-    5: {
-        "display":"Submenu",
-        "exec": subMenu,
-        "type":"submenu"
-    }
 }
 
 if __name__ == "__main__":
