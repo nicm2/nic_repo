@@ -1,16 +1,11 @@
-from week0.christmastree import printTree
-from week0.ship import printShip
-def f1():
-    print('f1')
-def f2():
-    print('f2')
+
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
 # 1. file names will be run by exec(open("filename.py").read())
 # 2. function references will be executed directly file.function()
 main_menu = [
-    ["Christmas Tree", "christmastree.py"],
-    ["Ship", "ship.py"],
+    ["Christmas Tree", "week0/christmastree.py"],
+    ["Ship", "week0/ship.py"],
 ]
 
 # Menu banner is typically defined by menu owner
