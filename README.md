@@ -1,5 +1,5 @@
 # nic_repo 
 
-Name | Github Profile | Journal Links | Role | Commits |
+Name | Github Profile | Replit | Role | Commits |
 | :---- | :---- | :---- | :---- | :---- |
-| Nicolas Mounier | [@nicm2](https://github.com/nicm2) | [Individual Repo](https://github.com/nicm2/nic_repo) | Scrum Master | [Commits]() |
+| Nicolas Mounier | [@nicm2](https://github.com/nicm2) | [Replit Runtime](https://replit.com/@nicm21/nicrepo-2) | Scrum Master | [Commits](https://github.com/Reem57/n224-too/graphs/contributors) |
