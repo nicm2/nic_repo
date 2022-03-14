@@ -1,3 +1,5 @@
+{% include nav.html %}
+
 # Create Task
 - Menu with several mathematical functions, then takes user input and does calculation
 
