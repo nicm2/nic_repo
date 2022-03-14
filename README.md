@@ -6,4 +6,4 @@ Name | Github Profile | Replit | Role | Commits |
 
 # Time Box 
 
-Week 0: [Individual Review Ticket](https://github.com/nicm2/nic_repo/issues/1)
+Week 0: [Individual Review Ticket](https://github.com/nicm2/nic_repo/issues/1), [Group Review Ticket](https://github.com/Reem57/n224-too/issues/1)
