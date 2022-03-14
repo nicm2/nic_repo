@@ -1,5 +1,5 @@
 {% include nav.html %}
 
-TPT Notes and Work - Nicolas: 
+TPT Notes and Actions - Nicolas: 
 
--[Week 0](TPT/week0.md)
+- [Week 0](TPT/week0.md)
