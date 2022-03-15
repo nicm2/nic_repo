@@ -27,7 +27,7 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Tri2", submenu])
+    menu_list.append(["Tri2 submenu", submenu])
     buildMenu(title, menu_list)
 
 # def submenu
