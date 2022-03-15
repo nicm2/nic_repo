@@ -1,4 +1,5 @@
 
+
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
 # 1. file names will be run by exec(open("filename.py").read())
@@ -6,6 +7,13 @@
 main_menu = [
     ["Christmas Tree", "week0/christmastree.py"],
     ["Ship", "week0/ship.py"],
+]
+
+# Submenu list of [Prompt, Action]
+# Works similarly to main_menu
+sub_menu = [
+    ["Swap", "week0/swap.py"],
+    ["Matrix", "week0/matrix.py"]
 ]
 
 # Menu banner is typically defined by menu owner
@@ -19,11 +27,15 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
+    menu_list.append(["Tri2", submenu])
     buildMenu(title, menu_list)
 
 # def submenu
 # using sub menu list above:
-# sub_menu works similarly to menu(
+# sub_menu works similarly to menu()
+def submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, sub_menu)
 
 def buildMenu(banner, options):
     # header for menu
