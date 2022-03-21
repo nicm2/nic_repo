@@ -1,87 +1,92 @@
+from week0.christmastree import printTree
+from week0.ship import printShip
+from week0.swap import swap
+from week0.matrix import print_matr
+from week1.fibonacci import printFibo
+from week1.lists import InfoDb
+from week1.loops import for_loop,while_loop,recursive_loop
 
+def buildMenu(menu):
+    for key,value in menu.items():
+        display = value["display"]
+        print(f"{key} ------ {display}")
+    print("What is your choice? (enter the number value) ")
 
-# Main list of [Prompts, Actions]
-# Two styles are supported to execute abstracted logic
-# 1. file names will be run by exec(open("filename.py").read())
-# 2. function references will be executed directly file.function()
-main_menu = [
-    ["Christmas Tree", "week0/christmastree.py"],
-    ["Ship", "week0/ship.py"],
-]
+def presentMenu(menu):
+    buildMenu(menu)
+    choice = int(input())
+    while choice not in menu:
+        choice = int(input("Please elect a valid item. "))
+    if (choice) in menu:
+        if menu[choice]["type"] == "func":
+            menu[choice]["exec"]()
 
-# Submenu list of [Prompt, Action]
-# Works similarly to main_menu
-sub_menu = [
-    ["Swap", "week0/swap.py"],
-    ["Matrix", "week0/matrix.py"]
-]
+        else:
+            presentMenu(menu[choice]["exec"])
+subMenu = {
+    1: {"display":"Swap",
+    "exec":swap,
+    "type":"func"},
+    2: {"display":"Matrix",
+    "type":"func",
+    "exec": print_matr},
+    3: {
+        "display": "Quit",
+        "exec":quit,
+        "type":"func"
+    }
 
-# Menu banner is typically defined by menu owner
-border = "=" * 25
-banner = f"\n{border}\nPlease Select An Option\n{border}"
-
-# def menu
-# using main_menu list:
-# 1. main menu and submenu reference are created [Prompts, Actions]
-# 2. menu_list is sent as parameter to menuy.menu function that has logic for menu control
-def menu():
-    title = "Function Menu" + banner
-    menu_list = main_menu.copy()
-    menu_list.append(["Tri2 submenu", submenu])
-    buildMenu(title, menu_list)
-
-# def submenu
-# using sub menu list above:
-# sub_menu works similarly to menu()
-def submenu():
-    title = "Function Submenu" + banner
-    buildMenu(title, sub_menu)
-
-def buildMenu(banner, options):
-    # header for menu
-    print(banner)
-    # build a dictionary from options
-    prompts = {0: ["Exit", None]}
-    for op in options:
-        index = len(prompts)
-        prompts[index] = op
-
-    # print menu or dictionary
-    for key, value in prompts.items():
-        print(key, '->', value[0])
-
-    # get user choice
-    choice = input("Type your choice> ")
-
-    # validate choice and run
-    # execute selection
-    # convert to number
-    try:
-        choice = int(choice)
-        if choice == 0:
-            # stop
-            return
-        try:
-            # try as function
-            action = prompts.get(choice)[1]
-            action()
-        except TypeError:
-            try:  # try as playground style
-                exec(open(action).read())
-            except FileNotFoundError:
-                print(f"File not found!: {action}")
-            # end function try
-        # end prompts try
-    except ValueError:
-        # not a number error
-        print(f"Not a number: {choice}")
-    except UnboundLocalError:
-        # traps all other errors
-        print(f"Invalid choice: {choice}")
-    # end validation try
-
-    buildMenu(banner, options)  # recursion, start menu over again
-
+}
+hack2Menu = {
+    1: {
+        "display":"For loop",
+        "exec": for_loop,
+        "type":"func"
+    },
+    2: {
+        "display":"While loop",
+        "exec": while_loop,
+        "type":"func"
+    },
+    3: {
+        "display":"Recursive",
+        "exec": recursive_loop,
+        "type":"func"
+    },
+    4: {
+        "display":"Quit program",
+        "exec": quit,
+        "type":"func"
+    },
+}
+mainMenu = {
+    1: {"display":"Christmas Tree",
+    "exec":printTree,
+    "type":"func"},
+    2: {"display":"Ship",
+    "exec":printShip,
+    "type":"func"},
+    3: {
+        "display":"Tri2",
+        "exec": subMenu,
+        "type":"submenu"
+    },
+    4: {
+        "display":"Fibonacci",
+        "exec": printFibo,
+        "type":"func"
+    },
+    5: {
+        "display":"Lists and Loops",
+        "exec": hack2Menu,
+        "type":"submenu"
+    },
+    6: {
+        "display": "Quit",
+        "exec":quit,
+        "type":"func"
+    }
+}
 
 if __name__ == "__main__":
-    menu()
+  presentMenu(mainMenu)
