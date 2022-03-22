@@ -43,4 +43,6 @@ Red tape is definatley something that blocks digital empowerment. Those who are 
 - PII can be used to stalk or steal the identity of a person or to aid in the planning of other criminal acts
 - Authentication measures protect devies and information from unauthorized access. Examples of authentication measures include strong passwords and multifactor authentication
 - A strong password is something that is easy for a user to remeber, but would be difficult for someone else to guess based on knowledge of that user
+- Phishing is a technique that attempts to trick a user into providing personal information. That personal information can then be used to access sensitive online resources, such as bank accounts and emails
+- Key logging is the use of a program to record every keystroke made by a computer user in order to gain fraudulent access to passwords and other confidential information
 
