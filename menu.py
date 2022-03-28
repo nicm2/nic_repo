@@ -43,11 +43,6 @@ mathMenu = {
         "type":"func"
     },
     4: {
-        "display": "Palindrome",
-        "exec":paltest,
-        "type":"func"
-    },
-    5: {
         "display": "Quit",
         "exec":quit,
         "type":"func"
@@ -102,6 +97,11 @@ listMenu = {
         "type":"submenu"
        },
     2: {
+        "display": "Palindrome",
+        "exec":paltest,
+        "type":"func"
+    },
+    3: {
         "display": "Quit",
         "exec":quit,
         "type":"func"
