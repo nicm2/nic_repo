@@ -8,4 +8,5 @@ Name | Github Profile | Replit | Role | Commits |
 
 - Week 0: [Individual Review Ticket](https://github.com/nicm2/nic_repo/issues/1), [Group Review Ticket](https://github.com/Reem57/n224-too/issues/1)
 - Week 1: [Individual Review TIcket](https://github.com/nicm2/nic_repo/issues/2), [Group Review Ticket](https://github.com/Reem57/n224-too/issues/6)
+- Week 2: [Individual Review TIcket](https://github.com/nicm2/nic_repo/issues/3)
 <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@nicm21/nicrepo-3?embed=true"></iframe>
