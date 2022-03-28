@@ -4,7 +4,10 @@ from week0.swap import swap
 from week0.matrix import print_matr
 from week1.fibonacci import printFibo
 from week1.lists import InfoDb
+from week2.factorial import printFact
 from week1.loops import for_loop,while_loop,recursive_loop
+from week2.gcd import tester
+from week2.palindrome import paltest
 
 def buildMenu(menu):
     for key,value in menu.items():
@@ -23,20 +26,34 @@ def presentMenu(menu):
 
         else:
             presentMenu(menu[choice]["exec"])
-subMenu = {
-    1: {"display":"Swap",
-    "exec":swap,
-    "type":"func"},
-    2: {"display":"Matrix",
-    "type":"func",
-    "exec": print_matr},
+mathMenu = {
+    1: {
+        "display":"Fibonacci",
+        "exec": printFibo,
+        "type":"func"
+    },
+    2: {
+        "display": "Factorial",
+        "exec":printFact,
+        "type":"func"
+    },
     3: {
+        "display": "GCD",
+        "exec":tester,
+        "type":"func"
+    },
+    4: {
+        "display": "Palindrome",
+        "exec":paltest,
+        "type":"func"
+    },
+    5: {
         "display": "Quit",
         "exec":quit,
         "type":"func"
     }
-
 }
+
 hack2Menu = {
     1: {
         "display":"For loop",
@@ -59,29 +76,55 @@ hack2Menu = {
         "type":"func"
     },
 }
-mainMenu = {
+drawingMenu = {
     1: {"display":"Christmas Tree",
     "exec":printTree,
     "type":"func"},
     2: {"display":"Ship",
     "exec":printShip,
     "type":"func"},
+    3: {"display":"Matrix",
+    "exec":print_matr,
+    "type":"func"},
+    4: {"display":"Swap",
+    "exec":swap,
+    "type":"func"},
+    5: {
+        "display": "Quit",
+        "exec":quit,
+        "type":"func"
+    }
+}
+
+listMenu = {
+    1: {"display":"Lists and Loops",
+        "exec": hack2Menu,
+        "type":"submenu"
+       },
+    2: {
+        "display": "Quit",
+        "exec":quit,
+        "type":"func"
+    }
+}
+
+mainMenu = {
+    1: {
+        "display":"Math Menu",
+        "exec": mathMenu,
+        "type":"submenu"
+    },
+    2: {
+        "display":"Drawing Menu",
+        "exec": drawingMenu,
+        "type":"submenu"
+    },
     3: {
-        "display":"Tri2",
-        "exec": subMenu,
+        "display":"List Menu",
+        "exec": listMenu,
         "type":"submenu"
     },
     4: {
-        "display":"Fibonacci",
-        "exec": printFibo,
-        "type":"func"
-    },
-    5: {
-        "display":"Lists and Loops",
-        "exec": hack2Menu,
-        "type":"submenu"
-    },
-    6: {
         "display": "Quit",
         "exec":quit,
         "type":"func"
