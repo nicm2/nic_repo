@@ -32,15 +32,15 @@ def tester():
 	num = input("Imperative function: type 'i' or OOP function type 'o' ")
 	try:
 		if num == 'i':
-			print("The gcd of 60 and 48 is : ",end="")
-			print(igcd(60,48))
+			print("The gcd of 90 and 80 is : ",end="")
+			print(igcd(90,80))
 		elif num == 'o':
-			f = Gcd(60,48)
-			print("The gcd of 60 and 48 is : ",end="")
+			f = Gcd(24,60)
+			print("The gcd of 24 and 60 is : ",end="")
 			print(f())
 	except:
 		print("Sorry, something went wrong")
 
 
 if __name__ == "__main__":
-    tester()
+    gcdtest()
