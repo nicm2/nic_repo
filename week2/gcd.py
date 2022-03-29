@@ -29,7 +29,8 @@ class Gcd:
 		return gcd
 
 def tester():
-	num = input("Imperative function: type 'i' or OOP function type 'o' ")
+	int1 = input("Enter a number")
+	int2 = input
 	try:
 		if num == 'i':
 			print("The gcd of 90 and 80 is : ",end="")

@@ -8,6 +8,7 @@ from week2.factorial import printFact
 from week1.loops import for_loop,while_loop,recursive_loop
 from week2.gcd import tester
 from week2.palindrome import paltest
+from week3.factor import normal_factor
 
 def buildMenu(menu):
     for key,value in menu.items():
@@ -43,6 +44,11 @@ mathMenu = {
         "type":"func"
     },
     4: {
+        "display": "Factor",
+        "exec":normal_factor,
+        "type":"func"
+    },
+    5: {
         "display": "Quit",
         "exec":quit,
         "type":"func"
