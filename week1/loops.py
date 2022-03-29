@@ -1,5 +1,5 @@
-from week1.hack import InfoDb
-# Hack 2a
+from week1.lists import InfoDb
+
 def for_loop():
     for x in InfoDb:
         for key,value in x.items():
@@ -7,8 +7,6 @@ def for_loop():
         print()
         print("-"*10)
         print()
-
-# Hack 2b
 
 def while_loop():
     x = 0
@@ -19,8 +17,6 @@ def while_loop():
         print('-'*10)
         print()
         x += 1
-
-# Hack 3b
 
 def recursive_loop():
     n=0
