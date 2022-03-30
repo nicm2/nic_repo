@@ -8,14 +8,35 @@ from week2.factorial import printFact
 from week1.loops import for_loop,while_loop,recursive_loop
 from week2.gcd import gcdtest
 from week2.palindrome import paltest
+from week3.factor import normal_factor
+import time
+import os
 
 def buildMenu(menu):
     for key,value in menu.items():
         display = value["display"]
         print(f"{key} ------ {display}")
-    print("What is your choice? (enter the number value) ")
+    print("\u001b[34m What is your choice? (enter the number value) ")
+
+
+
+
+
+def printmenubar(n,display=None):
+    os.system('cls')
+    print("\033[34m="*n)
+    if display:
+        print("="," "*int((n-5-len(display))/2),f"{display}"," "*int((n-5-len(display))/2),"=")
+    else:
+        print("="," "*(n-4),"=")
+    print("="*n,"\033[0m")
+
 
 def presentMenu(menu):
+    for x in range(49):
+        printmenubar(x)
+        time.sleep(0.01)
+    printmenubar(50, "Python Main Menu")
     buildMenu(menu)
     choice = int(input())
     while choice not in menu:
@@ -43,6 +64,11 @@ mathMenu = {
         "type":"func"
     },
     4: {
+        "display": "Factor",
+        "exec":normal_factor,
+        "type":"func"
+    },
+    5: {
         "display": "Quit",
         "exec":quit,
         "type":"func"
@@ -110,17 +136,17 @@ listMenu = {
 
 mainMenu = {
     1: {
-        "display":"Math Menu (Factorial, Fibonacci, etc.)",
+        "display":"Math Menu",
         "exec": mathMenu,
         "type":"submenu"
     },
     2: {
-        "display":"Drawing Menu (Ship, Matrix, etc.)",
+        "display":"Drawing Menu",
         "exec": drawingMenu,
         "type":"submenu"
     },
     3: {
-        "display":"List Menu (Palindrome, Lists and Loops, etc.)",
+        "display":"List Menu",
         "exec": listMenu,
         "type":"submenu"
     },
