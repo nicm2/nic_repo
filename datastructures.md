@@ -12,7 +12,8 @@
 - While, for, and recursive loops to repeat code (while built in counter, for is specified)
 
 Week 0: 
-```py try: 
+```py 
+      try: 
         f = open("demofile.txt")
         try:
           f.wrtie("Lorum Ipsum")
@@ -21,4 +22,7 @@ Week 0:
         finally:
           f.close()
       except:
-        print("Something went wrong when opening the file")```
+        print("Something went wrong when opening the file")
+  # use except and try to test when an error occur and keep the function running
+        ```
+        
