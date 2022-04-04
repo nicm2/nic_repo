@@ -77,6 +77,7 @@ def tester():
 
 # Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
 ```
+Week 2:
 
 ```py 
 #init() function for classes which is executed when a class is called to assign initial values
