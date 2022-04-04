@@ -77,4 +77,21 @@ def tester():
 
 # Hack 3: Fibonacci.  Write a recursive program to create a fibonacci sequence including error handling(with try/except) for invalid input
 ```
-        
+
+```py 
+#init() function for classes which is executed when a class is called to assign initial values
+class Fibonacci:
+    def __init__(self):
+        self.fiboSeq = [0, 1]
+```
+```py
+# call function inside a class which makes it able to act as a regular function and call itself
+    def __call__(self, n):
+        if n < len(self.fiboSeq):
+            return self.fiboSeq[n]
+        else:
+            # Compute the requested Fibonacci number
+            fib_number = self(n - 1) + self(n - 2) # two recursive calls to self (__call__(self, n))
+            self.fiboSeq.append(fib_number) # builds list, with most nested of the calculations 1st... may hurt your head
+        return self.fiboSeq[n]
+```
