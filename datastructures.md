@@ -48,7 +48,8 @@ InfoDb.append({
                "Residence": "San Diego",  
                "Email": "snaidu@powayusd.com",  
                "Owns_Cars":["A","B","C"]  
-              })  ```
+              })  
+```
 ```py 
 # recursion simulates loop incrementing on each call (n + 1) until exit condition is met
 def recursive_loop(n):
