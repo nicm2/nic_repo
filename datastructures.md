@@ -23,6 +23,5 @@ Week 0:
           f.close()
       except:
         print("Something went wrong when opening the file")
-  # use except and try to test when an error occur and keep the function running
-        ```
+  # use except and try to test when an error occur and keep the function running```
         
