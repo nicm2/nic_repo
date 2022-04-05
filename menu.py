@@ -142,17 +142,17 @@ listMenu = {
 
 mainMenu = {
     1: {
-        "display": "Math Menu",
+        "display": "Math Menu (Fibo, Factorial, GCD)",
         "exec": mathMenu,
         "type": "submenu"
     },
     2: {
-        "display": "Drawing Menu",
+        "display": "Drawing Menu (Matrix, Ship, Christmas Tree)",
         "exec": drawingMenu,
         "type": "submenu"
     },
     3: {
-        "display": "List Menu",
+        "display": "List Menu (Lists, Loops, Pali)",
         "exec": listMenu,
         "type": "submenu"
     },
