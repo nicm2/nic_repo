@@ -13,7 +13,7 @@ import time
 import os
 ANSI_HOME_CURSOR = u"\u001B[0;0H\u001B[2"
 ANSI_CLEAR_SCREEN = u"\u001B[2J"
-
+# menu constructor
 def buildMenu(menu):
     for key, value in menu.items():
         display = value["display"]
@@ -24,7 +24,7 @@ def ocean_print():
     # print ocean
     print(ANSI_CLEAR_SCREEN, ANSI_HOME_CURSOR)
     print("\n\n\n\n")
-
+# menu bar build code
 def printmenubar(n, display=None):
     # os.system("cls")
     ocean_print()
@@ -35,16 +35,17 @@ def printmenubar(n, display=None):
         print("=", " " * (n - 4), "=")
     print("=" * n, "\033[0m")
 
-
+# print menu
 def presentMenu(menu):
     for x in range(49):
         printmenubar(x)
         time.sleep(0.01)
     printmenubar(50, "Python Main Menu")
     buildMenu(menu)
-    choice = int(input())
-    while choice not in menu:
-        choice = int(input("Please elect a valid item. "))
+    choice = input()
+    options = [1, 2, 3, 4]
+    while choice not in options:
+        choice = int(input("Please select a valid item. "))       
     if (choice) in menu:
         if menu[choice]["type"] == "func":
             menu[choice]["exec"]()
@@ -122,7 +123,7 @@ drawingMenu = {
         "type": "func"
     }
 }
-
+#submenus which go to specific files
 listMenu = {
     1: {"display": "Lists and Loops",
         "exec": hack2Menu,
@@ -139,7 +140,7 @@ listMenu = {
         "type": "func"
     }
 }
-
+# main menu which directs to files organized by topics
 mainMenu = {
     1: {
         "display": "Math Menu (Fibo, Factorial, GCD)",
