@@ -18,7 +18,7 @@ I got Question 33 wrong because I put B when the correct answer was D. The answe
 
 ## Quiz 2
 
-![image](![image](https://user-images.githubusercontent.com/89167131/165120424-cd2bb36e-d8bf-4d06-954f-8b995591d9f9.png)
+![image](https://user-images.githubusercontent.com/89167131/165121812-77ebb28e-a620-47db-926d-34d707416880.png)
 
 ## Quiz 2 Test Corrections
 
@@ -31,6 +31,6 @@ I got Question 10 wrong because I put C when the correct answer was B. The answe
 ### Question 24
 I got Question 33 wrong because I put A when the correct answer was C. The answer was C beacuse if a particular device or connection on the Internet fails, subsequent data will be sent via a different route, if possible. This is supported by redundancy in the network.
 
-# Question 42
+### Question 42
 I got Question 42 wrong because I put A and C when the correct answer was B and C. The answer was B beacause cloud computing fosters new ways to communicate and collaborate, allowing users to share files and tools
 easily.
