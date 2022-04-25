@@ -3,7 +3,7 @@
 # Create Task
 
 ## Runtime
-- [Replit Runtime](https://replit.com/@nicm21/createtask#main.py)
+- [Replit Runtime](https://replit.com/@nicm21/CB-Create-Task#main.py)
 
 **Create Task Idea**
 -Recommendations for AP classes based on questions
@@ -23,6 +23,9 @@
 * Instructions for output (tactile, audible, visual, or textual): Based on the program and its use, the output will be textual, displaying the AP Classes that best fit the student.
 
 * Relates to PBL as it gives recommendations for classes in Del Norte
+
+**Video**
+* [Video](https://drive.google.com/file/d/1u14zIEh_jV6X8AfYjGW5TGbu8AzW4rF3/view)
 
 **Written Response**
 * The overall purpose of the program is to help students narrow down the number of possible AP Classes by giving suggestions based on their input and personality of what AP Classes they should take. With CRF just coming out, it is a helpful tool for students who don't know what classes to take.
