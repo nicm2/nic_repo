@@ -42,6 +42,7 @@ def presentMenu(menu):
         time.sleep(0.01)
     printmenubar(50, "Python Main Menu")
     buildMenu(menu)
+    # error handling
     choice = input()
     options = [1, 2, 3, 4]
     while choice not in options:
