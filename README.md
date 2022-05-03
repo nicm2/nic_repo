@@ -12,4 +12,5 @@ Name | Github Profile | Replit | Role | Commits |
 - Week 3: [Video](https://drive.google.com/file/d/1NahKGmKcQP8UsqvYuZ6CB2Q8hkvj64LI/view?usp=sharing), [Individual Review Ticket](https://github.com/nicm2/nic_repo/issues/5)
 - Week 4: [Individual Review Ticket](https://github.com/nicm2/nic_repo/issues/6)
 - Week 5: [Individual Review Ticket](https://github.com/nicm2/nic_repo/issues/7)
+- Week 6: [Individual Review Ticket](https://github.com/nicm2/nic_repo/issues/8)
 <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@nicm21/nicrepo-3?embed=true"></iframe>
