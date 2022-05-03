@@ -7,3 +7,4 @@ TPT Notes and Actions - Nicolas:
 - [Week 2](TPT/week2.md)
 - [Week 5 (Quiz + Corrections)](TPT/week5.md)
 - [Study Plan](TPT/studyplan.md)
+- [Week 6 (Quiz + Corrections)](TPT/week6.md)
